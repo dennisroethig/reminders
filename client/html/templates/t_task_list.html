@@ -1,0 +1,36 @@
+<template name="task_list">
+
+    <div class="row main-nav">
+        
+        <div class="col-xs-4">
+            <a href="/#/new" class="btn btn-default btn-sm btn-block btn-primary">
+                <span class="glyphicon glyphicon-plus-sign"></span> New
+            </a>
+        </div>
+
+        <div class="col-xs-4">
+            <a href="/#/pending" class="btn btn-default btn-sm btn-block">
+                <span class="glyphicon glyphicon-time"></span> Pending ({{pendingCount}})
+            </a>
+        </div>
+
+        <div class="col-xs-4">
+            <a href="/#/sent" class="btn btn-default btn-sm btn-block">
+                <span class="glyphicon glyphicon-check"></span> Done ({{sentCount}})
+            </a>
+        </div>
+        
+    </div>
+
+    <ul class="task-list">
+        {{#each tasks}}
+            <li class="{{sent}}">
+                <span class="glyphicon glyphicon-{{typeIcon}}"></span>
+                {{name}}
+                <button type="button" class="btn btn-danger remove-task" data-id="{{_id}}">
+                    <span class="glyphicon glyphicon-minus-sign" data-id="{{_id}}"></span>
+                </button>
+            </li>
+        {{/each}}
+    </ul>
+</template>

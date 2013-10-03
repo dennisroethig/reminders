@@ -1,0 +1,96 @@
+/* CSS declarations go here */
+
+html, body {
+    background-color: #ecf0f1;
+}
+
+.container {
+    padding: 0;  
+    overflow:hidden;  
+    padding-top: 50px;
+}
+
+header {
+    height: 40px;
+    background-color: #000;
+    position: fixed;
+    height: 50px;
+    background-color: #333;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1;
+}
+
+#login-dropdown-list {
+    padding:10px;
+}
+
+.dropdown-toggle {
+    color: #ddd;
+    font-size: 1.1em;
+}
+
+.dropdown-toggle:hover {
+    color: #ddd;
+}
+
+.btn.remove-task {
+    background-color: #f00;
+    position: absolute;
+    top:3px;
+    right:3px;
+}
+
+.progress.final {
+    margin-bottom:0;
+}
+
+.create-new-task {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.create-new-task input {
+    width: 100%;
+}
+
+
+.main-nav {
+    padding: 10px 20px;
+}
+
+.main-nav .col-xs-4,
+.main-nav h5,
+.main-nav p {
+    padding: 0 5px;
+}
+
+.main-nav .progress {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#login-dropdown-list {
+    float:right;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.task-list li {
+    position: relative;
+    /*color: #e67e22;*/
+    background-color: #bdc3c7;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+}
+
+.task-list li.sent {
+    
+    /*color: #2ecc71;*/
+    font-weight: bold;
+
+}

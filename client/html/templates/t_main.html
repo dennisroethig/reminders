@@ -1,0 +1,19 @@
+<template name="main">
+    {{#if isUser}}
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8">
+
+                {{#if routeNewTask}}
+                    {{> new_task}}
+                    
+                {{else}}
+                    {{> task_list}}
+                    {{> settings}}
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
+</template>
